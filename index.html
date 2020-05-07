@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPS Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Find National Parks</h1>
+    <form class="find js-find">
+        <label for="text">Enter State Code Here:</label>
+        <input type="text" placeholder="MN,CO,NV" id="text" class="js-state-codes" required="">
+        <label for="number">Results Found: </label>
+        <input type="number" value="10" id="number" min="1" max="50" class="js-max-results" required="">
+        <input type="submit" value="Search">
+    </form>
+
+    <h2 class="js-error-message"></h2>
+    <section class="results-box hidden js-results-box ">
+        <ul class="js-results"></ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

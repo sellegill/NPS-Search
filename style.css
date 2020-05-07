@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.find {
+    display: flex;
+    flex-direction: column;
+    width: 20%
+}
+
+
+
+.js-error-message{
+    color: red;
+}
